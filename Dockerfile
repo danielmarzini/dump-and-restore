@@ -8,7 +8,7 @@ RUN mkdir -p /etc/supervisor.d/ /var/log/supervisor/ /var/tmp/nginx/
 #COPY container/config/nginx/default.conf /etc/nginx/conf.d/default.conf
 #COPY container/config/nginx/nginx.conf /etc/nginx/nginx.conf
 
-COPY container/config/supervisor/nginx.ini /etc/supervisor.d
+COPY docker/container/config/supervisor/nginx.ini /etc/supervisor.d
 
 #App Section
 #COPY app/ /var/www

@@ -7,5 +7,5 @@ RUN mkdir -p /etc/supervisor.d/ /var/log/supervisor/ /var/tmp/nginx/
 COPY docker/container/config/supervisor/nginx.ini /etc/supervisor.d
 
 
-#EXPOSE 80/tcp
+EXPOSE 80/tcp
 ENTRYPOINT /usr/bin/supervisord -n -c /etc/supervisord.conf
